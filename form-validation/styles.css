@@ -1,0 +1,82 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form {
+    width: 350px;
+    height: 450px;
+    border: 1px #ddd solid;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px #121212;
+}
+
+.input-groups {
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.title {
+    margin-top: 0;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+input {
+    width: 100%;
+    border-width: 0.5px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border:none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(110%)
+}
+
+.icon {
+    position: absolute;
+    right: 5px;
+    top: 22px;
+}
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: red;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+input:not(:placeholder-shown):invalid{
+    background-color:pink;
+    box-shadow:0 0 0 2px red;
+  }

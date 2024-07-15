@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>CoderSchool's Psychic Powers Tester</h1>
+    <p>
+      Do you have psychic powers? If so, prove it by guessing what number I am
+      thinking of right now. I am thinking of a number between 1 and 10.
+    </p>
+
+    <button onclick="makeGuess()">Guess</button>
+
+    <h2>You guessed: <span id="last-guess">?</span></h2>
+
+    <h2>That guess was <span id="correct">?</span></h2>
+
+    <h2>You have <span id="guesses-remaining">?</span> guesses remaining.</h2>
+
+    <script src="script.js"></script>
+  </body>
+</html>

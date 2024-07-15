@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #121212;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}

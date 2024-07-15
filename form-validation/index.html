@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-form">
+            <h2 class="title">Register Form</h1>
+            <form action="#" class="form" autocomplete="off">
+                <div class="input-groups">
+                    <span>
+                        <label for="username">Username</label>
+                    </span>
+                    <input id="username" type="text" name="username">
+                    <span class="error-message hidden">Error</span>
+                    <span class="icon error-icon hidden">❌</span>
+                    <span class="icon success-icon hidden">✅</span>
+                </div>
+                <div class="input-groups">
+                    <span>
+                        <label for="email">Email Input</label>
+                    </span>
+                    <input type="text" id="email" name="email">
+                    <span class="error-message hidden">Error</span>
+                    <span class="icon error-icon hidden">❌</span>
+                    <span class="icon success-icon hidden">✅</span>
+                </div>
+                <div class="input-groups password">
+                    <span>
+                        <label for="password">Password</label>
+                    </span>
+                    <input autocomplete="off" type="password" name="password" id="password">
+                    <span class="error-message hidden">Error</span>
+                    <span class="icon error-icon hidden">❌</span>
+                    <span class="icon success-icon hidden">✅</span>
+                </div>
+                <div class="input-groups password-confirm">
+                    <span>
+                        <label for="password-confirm">Password confirmation</label>
+                    </span>
+                    <input autocomplete="off" type="password" name="password-confirm" id="password-confirm">
+                    <span class="error-message hidden">Error</span>
+                    <span class="icon error-icon hidden">❌</span>
+                    <span class="icon success-icon hidden">✅</span>
+                </div>
+                <button type="submit" id="create-account">Create account</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+                    <!-- <input 
+                    type="email"
+                    name="email"
+                    lang="en"
+                    maxlength="254"
+                    value=""
+                    placeholder="Your email"
+                    autocapitalize="off" spellcheck="false" autocorrect="off"
+                    autocomplete="on"
+                    required=""
+                    inputmode="email"> -->

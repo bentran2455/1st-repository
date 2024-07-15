@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div id="contact-card">
+        <div class="top-card">
+          <div class="avatar">
+            <img
+              src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/406526687_907528054311724_4794601664631556054_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=SZF35Csv7V8Q7kNvgFlF26u&_nc_ht=scontent.fsgn5-10.fna&oh=00_AYAjrbhE8K4F9TPm25LImyHjENQJHXyngS0PRXtdjbA9bA&oe=667EFE12"
+              alt="photocard"
+            />
+          </div>
+          <div class="small-name">
+            <h2>Ben Tran</h2>
+          </div>
+        </div>
+        <div class="main-card">
+          <div class="main-card-before">
+            <div class="big-name">
+              <h2>Ben Tran</h2>
+            </div>
+            <p class="desc-card">
+              I am learning Full-stack Web Development Course at CODERSCHOOL.
+              This is the first project to claim the first certification.
+              Shoutout to myself muahaha
+            </p>
+          </div>
+          <div class="main-card-after">
+            <p class="email">letscontactben@gmail.com</p>
+            <h1>Contact Ben</h1>
+            <form id="contact-ben">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+              />
+              <textarea
+                name="content"
+                id="content"
+                placeholder="Content"
+              ></textarea>
+            </form>
+          </div>
+        </div>
+        <div class="bot-card-before">
+          <a id="open" href="#">GET IN TOUCH</a>
+        </div>
+        <div class="bot-card-after">
+          <a id="cancel" href="#" tabindex="1">Cancel</a>
+          <a id="send" href="#" tabindex="2">SEND</a>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
