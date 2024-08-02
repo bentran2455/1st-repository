@@ -28,15 +28,16 @@ body {
     gap: 15px;
 }
 
-#display-screen {
+#display-screen input {
     background-color: #382325;
     text-align: right;
     color: white;
     padding: 0 15px;
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
     align-items: center;
     border-radius: 15px;
+    border: none;
+    letter-spacing: 0.125pc;
 }
 
 .row {
@@ -61,6 +62,9 @@ body {
     border: none;
     font-weight: bold;
     cursor: pointer;
+}
+button:active {
+    background-color: lightpink;
 }
 
 .row2 {

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Game Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <a href="#" class="steam-log"><img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/05/steam-white-and-blue-logo-official.jpg" height="80" alt="STEAM-LOGO"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a onclick="showAllGames()" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="games-section">
+        <div class="layout">
+            <div id="filter-tree">
+                <a id="featured" href="#">Featured Games</a>
+                <details href="#" open>
+                    <summary for="genre">Genre</summary>
+                    <ul id="genre-list">
+                    </ul>
+                </details>
+                <details href="#" open>
+                    <summary for="tags">Tags</summary>
+                    <ul id="tag-list">
+                    </ul>
+                </details>
+            </div>
+            <div id="games-listing-column">
+                <div class="toolbar">
+                    <i class="material-icons">search</i>
+                    <p class="number-of-games">30 games</p>
+                </div>
+                <div id="game-details"></div>
+                <div class="games-list">
+                </div> 
+            </div>
+        </div>
+    </main>
+    <div class="search-toggle-section">
+        <div class="search-form">
+            <input type="search" placeholder="Search" required="" autocorrect="off" autocapitalize="off">
+                <button type="submit" id="Search">
+                    <i class="material-icons search">search</i>
+                </button>
+        </div>
+        <button type="submit" id="Close">
+            <i class="material-icons close">close</i>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

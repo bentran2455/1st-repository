@@ -1,0 +1,241 @@
+@keyframes animateMenuOpen {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 0.2fr 3fr;
+    background-color: #f6f6f6;
+}
+
+#games-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#genre-list li {
+    text-transform: capitalize;
+}
+
+#games-section a {
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+#games-section a:hover {
+    text-decoration: underline;
+}
+
+#games-section a:visited {
+    color: black;
+}
+
+.material-icons {
+    vertical-align:-14%
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-right: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #66c0f4;
+    color: white;
+}
+
+nav a:hover {
+    background-color: blue;
+}
+
+nav a:active {
+    color: blue;
+}
+
+#games-section {
+    padding: 0 2rem;
+}
+
+div#games-listing-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-left: 1px solid #ebebeb;
+    flex-wrap: wrap;
+    flex: 1 1 20%;
+}
+
+.layout {
+    display: flex;
+    height: 100%;
+}
+
+#filter-tree {
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#filter-tree summary {
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+details {
+    padding: 28px 0;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+.material-icons:hover {
+    transform: scale(1.07);
+}
+
+a#featured {
+    padding: 28px 0;
+}
+
+details {
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+div#games-listing-column {
+    width: 100%;
+}
+
+.games-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.game-item {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 20%;
+}
+.game-image img:hover {
+    filter: brightness(120%);
+}
+
+input {
+    padding: 15px;
+    height: 45px;
+    text-align: left;
+    width: 400px;
+    border-radius: 4px;
+}
+
+button#Subscribe {
+    position: absolute;
+    height: 100%;
+    right: 15px;
+    background: none;
+    border: none;
+}
+
+.search-toggle-section {
+    opacity: 0;
+    position: absolute;
+    color: rgba(18, 18, 18, 0.75);
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+.search-form {
+    position: relative;
+}
+
+button#Search {
+    position: absolute;
+    height: 100%;
+    right: 15px;
+    background: none;
+    border: none;
+}
+
+button#Close {
+    background: none;
+    border:none;
+}
+.fade {
+    background-color: rgba(18, 18, 18, 0.5);
+    height: 100%;
+}
+
+.search-toggle-section[open=true] {
+    z-index: 0;
+    opacity: 1;
+    animation: animateMenuOpen 0.2s ease;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+#game-details {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+}
+
+#game-details h2, p.game-desc {
+    margin-bottom: 17.5px;
+}
+
+.game-spec {
+    padding: 10px;
+}
+
+#game-details p {
+    font-size: 1em;
+    color: #333232;
+    text-align: justify;
+}
